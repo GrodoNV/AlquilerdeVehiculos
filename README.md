@@ -109,7 +109,12 @@ SistemaAlquiler.java
 ---
 
 ## 🏗️ Reglas de Git
+## Reglas de Git
 
-1. Cada integrante trabaja en su **rama personal** (`rama-nombre`).  
-2. Antes de hacer push: `git pull origin main` para actualizar la rama local.  
-3. Commits claros y frecuentes, con formato:  
+1. Cada integrante trabaja en su propia **branch**: `vehiculo`, `cliente`, `alquiler`, `inspeccion`, `sistema`.  
+2. Antes de hacer un **push**, se debe hacer un `git pull` de la rama principal (`main`) para evitar conflictos.  
+3. Los commits deben ser claros y descriptivos:  
+   - Ejemplo: `Agregar métodos de cálculo de tarifa en Vehiculo`.  
+4. Cada integrante es responsable de probar su clase antes de hacer merge.  
+5. Las merges a `main` se harán mediante **Pull Requests** revisadas por al menos un compañero.  
+6. Los archivos de la carpeta `gui/` se crean vacíos por ahora para no romper la estructura del proyecto.
