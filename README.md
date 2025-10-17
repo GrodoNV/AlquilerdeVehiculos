@@ -93,15 +93,16 @@ SistemaAlquiler.java
 
 ---
 
-## 👥 División del Trabajo
+## 👥 División del Trabajo## División de Trabajo y Responsabilidades
 
-| Integrante | Clases a Implementar |
-|------------|--------------------|
-| Integrante 1 | Vehiculo, Automovil |
-| Integrante 2 | Camioneta, Cliente |
-| Integrante 3 | Reserva, Alquiler |
-| Integrante 4 | Comprobante, Inspeccion |
-| Integrante 5 | SistemaAlquiler, Main |
+| Integrante    | Clases a Implementar                | Responsabilidades Detalladas |
+|---------------|-----------------------------------|------------------------------|
+| Integrante 1  | `Vehiculo`, `Automovil`            | - Definir atributos y métodos comunes de vehículos.<br>- Implementar `calcularTarifa()` para automóviles.<br>- Sobrescribir métodos heredados de `Vehiculo`.<br>- Probar creación y descripción de vehículos. |
+| Integrante 2  | `Camioneta`, `Cliente`             | - Implementar atributos y métodos de camionetas (`capacidadCarga`, `tieneDobleCabina`).<br>- Implementar registro y búsqueda de reservas para clientes.<br>- Probar creación de clientes y asignación de vehículos. |
+| Integrante 3  | `Reserva`, `Alquiler`              | - Crear lógica de reservas (inicio, fin, estado, cálculo de costo).<br>- Implementar inicio y finalización de alquileres.<br>- Vincular reservas con vehículos y clientes.<br>- Probar flujo completo de reserva → alquiler. |
+| Integrante 4  | `Comprobante`, `Inspeccion`        | - Generar comprobantes a partir de alquileres.<br>- Registrar inspecciones de entrega y devolución de vehículos.<br>- Asegurar que los datos se mantengan consistentes con el alquiler.<br>- Probar generación de documentos e inspecciones. |
+| Integrante 5  | `SistemaAlquiler`, `Main`          | - Gestionar colecciones de vehículos, clientes, reservas y alquileres.<br>- Implementar métodos de búsqueda, alta y baja de entidades.<br>- Coordinar flujo general del sistema.<br>- Integrar interfaz GUI (`MainUI`) con la lógica de negocio.<br>- Probar todo el sistema de manera integrada. |
+
 
 > Cada integrante debe probar sus clases antes de hacer push y documentar cualquier método especial que agregue.
 
