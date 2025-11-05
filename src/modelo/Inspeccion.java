@@ -1,21 +1,22 @@
 package modelo;
 import java.util.Date;
 public class Inspeccion {
-  private String id;
+    private String id;
     private String tipo;
     private Date fecha;
     private String observaciones; 
+    private Vehiculo vehiculo;
 
-    public Inspeccion(String id, String tipo, Date fecha, String observaciones) {
+    public Inspeccion(String id, String tipo, Date fecha, String observaciones, Vehiculo vehiculo) {
         this.id = id;
         this.tipo = tipo;
         this.fecha = fecha;
         this.observaciones = observaciones;
+        this.vehiculo = vehiculo;
     }
 
-    
     public String toString() {
-        return "Inspeccion{" + "id=" + id + ", tipo=" + tipo + ", fecha=" + fecha + ", observaciones=" + observaciones + '}';
+        return "Inspeccion{" + "id=" + id + ", tipo=" + tipo + ", fecha=" + fecha + ", observaciones=" + observaciones + ", vehiculo=" + vehiculo + '}';
     }
     public void mostrar(){
         System.out.println(toString());
