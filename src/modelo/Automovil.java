@@ -1,6 +1,6 @@
 package modelo;
 
-public class Automovil {
+public class Automovil extends Vehiculo{
   private int numPuertas;
     private String tipoCombi;
 
