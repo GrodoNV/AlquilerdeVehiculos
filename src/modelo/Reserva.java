@@ -1,21 +1,22 @@
 package modelo;
 import java.util.Date;
 public class Reserva{
-  private String id;
+   private String id;
     private Date fechaInicio;
     private Date fechaFin;
     private String estado;
+    private Vehiculo vehiculo;
 
-    public Reserva(String id, Date fechaInicio, Date fechaFin, String estado) {
+    public Reserva(String id, Date fechaInicio, Date fechaFin, String estado, Vehiculo vehiculo) {
         this.id = id;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.estado = estado;
+        this.vehiculo = vehiculo;
     }
 
-    
     public String toString() {
-        return "Reserva{" + "id=" + id + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", estado=" + estado + '}';
+        return "Reserva{" + "id=" + id + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", estado=" + estado + ", vehiculo=" + vehiculo + '}';
     }
     public void mostrar(){
         System.out.println(toString());
