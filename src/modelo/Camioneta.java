@@ -1,6 +1,6 @@
 package modelo;
 
-public class Camioneta {
+public class Camioneta extends Vehiculo{
   private double capCarga;
     private boolean dobleCabina;
 
