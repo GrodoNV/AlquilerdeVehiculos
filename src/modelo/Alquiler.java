@@ -29,8 +29,9 @@ public class Alquiler {
 
     
     public String toString() {
-        return "Alquiler{" + "id=" + id + ", fechaEntrega=" + fechaEntrega + ", fechaDevolucion=" + fechaDevolucion + ", importeTotal=" + importeTotal + ", estado=" + estado + ", reservaasociada=" + reservaasociada + ", vehiculo=" + vehiculo + ", cliente=" + cliente + '}';
+        return "Alquiler{" + "id=" + id + ", fechaEntrega=" + fechaEntrega + ", fechaDevolucion=" + fechaDevolucion + ", importeTotal=" + importeTotal + ", estado=" + estado + ", reservaasociada=" + reservaasociada + ", vehiculo=" + vehiculo + ", cliente=" + cliente + ", inspeccion=" + inspeccion + ", comprobante=" + comprobante + '}';
     }
+
     public void mostrar(){
         System.out.println(toString());
     }
@@ -97,5 +98,20 @@ public class Alquiler {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+    public Inspeccion getInspeccion() {
+        return inspeccion;
+    }
+
+    public void setInspeccion(Inspeccion inspeccion) {
+        this.inspeccion = inspeccion;
+    }
+
+    public Comprobante getComprobante() {
+        return comprobante;
+    }
+
+    public void setComprobante(Comprobante comprobante) {
+        this.comprobante = comprobante;
     }
 }
